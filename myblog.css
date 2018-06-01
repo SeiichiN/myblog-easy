@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* ========== 共通設定 ========== */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #888;
+}
+img {
+    vertical-align: bottom;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+body {
+    font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+    color: #444;
+}
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* ========== manageBlog.php =========== */
+.manageBlog .id {
+    float: right;
+}
+.manageBlog .date {
+    float: right;
+    font-size: 0.8em;
+}
+.manageBlog .category,
+.manageBlog .tag {
+    float: left;
+    font-size: 0.8em;
+}
+.manageBlog .category {
+    margin-right: 10px;
+}
+.manageBlog:nth-child(odd) {
+    background-color: #e4d8e8;
+}
+.manageBlog:nth-child(even) {
+    background-color: beige;
+}
+.manageBlog {
+    padding: 5px;
+}
+
+/* ============== showBlog.php ================ */
+.single-page {
+    width: 610px;
+}
+.single-page h3 {
+    font-size: 1em;
+    font-weight: normal;
+}
+.single-page h1 {
+    width: 600px;
+    font-size: 1.2em;
+    border-left: solid 10px #aaa;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.single-page .body {
+    width: 600px;
+    height: 400px;
+    border: solid 1px #aaa;
+    margin-bottom: 5px;
+}
