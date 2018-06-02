@@ -23,6 +23,13 @@ if (!empty($_GET['id'])) {
 require_once 'header.php';
 ?>
 <div class="single-page clearfix">
+	<div class="editThis">
+	    <form action="editBlog.php" method="post">
+            <button type="submit" name="id" value="<?php echo $id; ?>">
+                <img src="img/pencil.png" alt="EDIT">
+            </button>
+        </form>
+    </div>
     <div class="id">id:<?php echo $id; ?></div>
     <h1 class="title"><?php echo $title; ?></h1>
     <div class="body"><?php echo $body; ?></div>
