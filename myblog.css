@@ -31,9 +31,25 @@ body {
     margin: 5px;
 }
 
+.notice {
+    float: right;
+    color: lightgreen;
+}
+
+/* ===== ヘッダー ----- */
+header {
+    positon: relative;
+    margin-bottom: 10px;
+}
+header .newBlog {
+    position: absolute;
+    top: 6px;
+    left: 100px;
+}
 header h1 {
     font-size: 1.2em;
 }
+    
 
 /* ===== manageBlog.php ===== */
 .manageBlog .id {
@@ -127,4 +143,3 @@ header h1 {
     border: solid 1px #aaa;
 }
 
-    

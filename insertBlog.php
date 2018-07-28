@@ -37,9 +37,16 @@ if ($okcount === 5) {
 	$stmt->bindValue(5, $tag, PDO::PARAM_STR);
 	$stmt->execute();
 	$msg = "登録しました。";
+
+	$query = "select id from $tablename where rowid = last_insert_rowid()";
+	$stmt = $db->query($query);
+	if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+		$id = $row['id'];
+	}
+	
 	$db = null;
 } else {
 	$msg = "未入力の項目があったので、データベースには登録しませんでした。";
 }
 
-echo $msg;
+header("Location: showBlog.php?id={$id}&msg={$msg}");
