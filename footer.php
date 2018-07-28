@@ -1,7 +1,8 @@
+<?php // footer.php ?>
             </article>
             <footer>
                 <small>&copy; 2018 Seiichi Nukayama</small>
             </footer>
-        </div>
+        </div><!-- #wrap -->
     </body>
 </html>

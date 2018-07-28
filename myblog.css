@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* ========== 共通設定 ========== */
+/* ===== 共通設定 ===== */
 * {
     margin: 0;
     padding: 0;
@@ -28,44 +28,17 @@ body {
     color: #444;
 }
 #wrap {
-    width: 800px;
-    margin: 0 auto;
+    margin: 5px;
 }
 
-/* ================ ヘッダー ================== */
-header {
-    position: relative;
-    margin-bottom: 10px;
-    height: 40px;
-}
-header .newBlog {
-    position: absolute;
-    top: 6px;
-    left: 140px;
-}
 header h1 {
-    font-size: 1.5em;
-}
-header .notice {
-    position: absolute;
-    left: 300px;
-    bottom: 10px;
-    color: lightgreen;
+    font-size: 1.2em;
 }
 
-
-/* ========== manageBlog.php =========== */
+/* ===== manageBlog.php ===== */
 .manageBlog .id {
     float: right;
-    display: none;
-}
-.manageBlog .trash {
-    float: right;
-}
-.manageBlog .trash button {
-    background: inherit;
-    border: none;
-    cursor: pointer;
+    font-size: 0.8em;
 }
 .manageBlog .date {
     float: right;
@@ -88,50 +61,33 @@ header .notice {
 .manageBlog {
     padding: 5px;
 }
-
-/* ============== showBlog.php ================ */
-.single-page {
-    width: 610px;
-}
-.single-page h3 {
+.manageBlog h1 {
     font-size: 1em;
-    font-weight: normal;
 }
+
+/* ===== showBlog.php ===== */
 .single-page h1 {
-    width: 600px;
     font-size: 1.2em;
     border-left: solid 10px #aaa;
     padding-left: 10px;
     margin-bottom: 5px;
 }
 .single-page .body {
-    width: 600px;
-    height: 400px;
+    height: 200px;
     border: solid 1px #aaa;
     margin-bottom: 5px;
+    padding: 5px;
 }
 .single-page .date {
     float: right;
+    font-size: 0.8em;
 }
 .single-page .id {
     float: right;
-    display: none;
-}
-.single-page .editThis {
-    float: right;
-}
-.single-page .editThis button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.single-page .editThis button:hover img {
-    opacity: 0.7;
-    width: 120%;
+    font-size: 0.8em;
 }
 
-
-/* ================== inputBlog.php ================== */
+/* ===== inputBlog.php ===== */
 .inputBlog-h1 {
     font-size: 1em;
 }
@@ -142,23 +98,24 @@ header .notice {
     content: " //---";
 }
 #form-title {
-    width: 600px;
+    width: 100%;
 }
 #form-body {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 200px;
 }
 #form-category {
-    width: 200px;
+    width: 100%;
 }
 #form-tag {
-    width: 400px;
+    width: 100%;
 }
 #form-submit {
     width: 50px;
     height: 50px;
     cursor: pointer;
     margin-right: 10px;
+    border: solid 1px #aaa;
 }
 #form-cancel {
     display: inline-block;
@@ -167,20 +124,7 @@ header .notice {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    border: solid 1px #aaa;
 }
 
-/* ======================= findBlog.php ==================== */
-.findword {
-    float: left;
-    margin-left: 2px;
-}
-.findBlog {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-.findBlog input[type="text"] {
-    height: 25px;
-    width: 200px;
-    display: block;
-}
+    
