@@ -1,5 +1,5 @@
 <?php // findBlog.php ?>
-<div class="findBlog">
+<div id="findBlog">
 	<form action="manageBlog.php" method="post" class="clearfix">
         <div class="findword">
             <select name="findOf" id="findOf">

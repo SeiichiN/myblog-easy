@@ -27,7 +27,7 @@ while ($blog = $stmt->fetch(PDO::FETCH_ASSOC)) {
         <div class="id">id:<?php echo $id; ?></div>
         <div class="upper clearfix">
             <div class="trash">
-                <form action="deleteBlog.php" method="post">
+                <form action="deleteBlog.php" method="post" onSubmit="return kakunin()">
                     <button type="submit" name="id" value="<?php echo $id; ?>">
                         <img src="img/trash.png" alt="削除">
                     </button>

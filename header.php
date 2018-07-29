@@ -12,11 +12,17 @@
             <header>
                 <h1><a href="manageBlog.php">MyBlog</a></h1>
                 <div class="newBlog"><a href="inputBlog.php">[ NEW ]</a></div>
-                <?php require_once 'findBlog.php'; ?>
-            </header>
-            <div class="notice clearfix">
-                <div class="message">
+                <div class="notice">
                     <?php if (!empty($_GET['msg'])) echo $_GET['msg']; ?>
                 </div>
-            </div>
+                <div id="findBtn" onclick="findSwitch()">
+                    <img src="img/find.png" alt="検索">
+                </div>
+                <?php require_once 'findBlog.php'; ?>
+            </header>
+            <!-- <div class="notice clearfix">
+                 <div class="message">
+                 <?php // if (!empty($_GET['msg'])) echo $_GET['msg']; ?>
+                 </div>
+                 </div> -->
             <article>
