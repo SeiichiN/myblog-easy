@@ -46,6 +46,7 @@ header h1 {
     line-height: 45px;
     background-color: pink;
     width: 76px;
+    text-align: center;
 }
 #findBtn {
     position: absolute;
@@ -53,7 +54,7 @@ header h1 {
     right: 5px;
 }
 #findBtn img {
-    width: 20px;
+    width: 35px;
 }
 header .notice {
     position: absolute;
@@ -213,5 +214,8 @@ header .notice {
 #findOf,
 .findword input[type="submit"] {
     font-size: 0.8em;
+}
+select.findword {
+    height: 40px;
 }
 
