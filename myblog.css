@@ -81,7 +81,11 @@ header .notice {
     display: none;
 }
 .manageBlog .trash {
-    float: right;
+    /* float: right; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
 }
 .manageBlog .trash button {
     background: inherit;
@@ -109,10 +113,17 @@ header .notice {
     background-color: beige;
 }
 .manageBlog {
-    padding: 5px;
+    position: relative;
 }
 .manageBlog h1 {
     font-size: 1em;
+}
+.manageBlog .upper {
+    height: 45px;
+}
+.manageBlog a {
+    display: block;
+    padding: 5px;
 }
 
 /* ===== showBlog.php ===== */

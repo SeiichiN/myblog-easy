@@ -25,24 +25,27 @@ while ($blog = $stmt->fetch(PDO::FETCH_ASSOC)) {
 ?>
     <section class="clearfix manageBlog">
         <div class="id">id:<?php echo $id; ?></div>
-        <div class="upper clearfix">
-            <div class="trash">
-                <form action="deleteBlog.php" method="post" onSubmit="return kakunin()">
-                    <button type="submit" name="id" value="<?php echo $id; ?>">
-                        <img src="img/trash.png" alt="削除">
-                    </button>
-                </form>
-            </div>
-            <h1 class="title">
-                <a href="showBlog.php?id=<?php echo $id; ?>">
-                    <?php echo $blog['title']; ?></a>
-            </h1>
-        </div><!-- .upper -->
-        <div class="under clearfix">
-            <div class="date">作成:<time><?php echo substr($blog['date'], 0, 10); ?></time></div>
-            <div class="category">カテゴリ: <?php echo $blog['category']; ?></div>
-            <div class="tag">タグ: <?php echo $blog['tag']; ?></div>
-        </div><!-- .under -->
+        <a href="showBlog.php?id=<?php echo $id; ?>">
+            <div class="upper clearfix">
+                <h1 class="title">
+                    <!-- <a href="showBlog.php?id=<?php // echo $id; ?>"> -->
+                        <?php echo $blog['title']; ?>
+                    <!-- </a> -->
+                </h1>
+            </div><!-- .upper -->
+            <div class="under clearfix">
+                <div class="date">作成:<time><?php echo substr($blog['date'], 0, 10); ?></time></div>
+                <div class="category">カテゴリ: <?php echo $blog['category']; ?></div>
+                <div class="tag">タグ: <?php echo $blog['tag']; ?></div>
+            </div><!-- .under -->
+        </a>
+		<div class="trash">
+			<form action="deleteBlog.php" method="post" onSubmit="return kakunin()">
+                <button type="submit" name="id" value="<?php echo $id; ?>">
+					<img src="img/trash.png" alt="削除">
+                </button>
+            </form>
+        </div><!-- .trash -->
     </section>
 <?php } ?>
 <?php require_once 'footer.php'; ?>
