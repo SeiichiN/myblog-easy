@@ -87,6 +87,8 @@ header .notice {
     background: inherit;
     border: none;
     cursor: pointer;
+    width: 45px;
+    height: 45px;
 }
 .manageBlog .date {
     float: right;
@@ -200,22 +202,20 @@ header .notice {
 }
 
 /* ===== findBlog.php ===== */
-#findBlog {
-    /* display: none; */
-}
 .findword {
     float: left;
     margin-left: 2px;
 }
 .findword input[type="text"] {
-    height: 16px;
-    width: 120px;
+    height: 45px;
+    width: 150px;
 }
 #findOf,
 .findword input[type="submit"] {
     font-size: 0.8em;
+    height: 45px;
 }
-select.findword {
-    height: 40px;
+.findword input[type="submit"] {
+    width: 45px;
 }
 
